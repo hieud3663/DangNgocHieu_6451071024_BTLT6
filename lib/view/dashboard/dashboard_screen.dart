@@ -3,6 +3,10 @@ import 'package:flutter_baitap_chuong7/view/3/home_setting.dart';
 import 'package:flutter_baitap_chuong7/view/4/product_list_view.dart';
 import 'package:flutter_baitap_chuong7/view/5/home_pick_color.dart';
 import 'package:flutter_baitap_chuong7/view/6/home_stack.dart';
+import 'package:flutter_baitap_chuong7/view/7/home_order.dart';
+import 'package:flutter_baitap_chuong7/view/8/home_confirm.dart';
+import 'package:flutter_baitap_chuong7/view/9/home_article.dart';
+import 'package:flutter_baitap_chuong7/view/10/home_theme.dart';
 import '../../../models/dashboard_item.dart';
 import '../../../widget/dashboard_card.dart';
 
@@ -22,7 +26,7 @@ class DashboardScreen extends StatelessWidget {
         icon: Icons.colorize,
         iconColor: Colors.red,
         label: 'Bài 2: Form thông tin cá nhân',
-        onTap: () => Navigator.pushNamed(context, '/home-profile')
+        onTap: () => Navigator.pushNamed(context, '/home-profile'),
       ),
       DashboardItem(
         icon: Icons.pan_tool,
@@ -39,7 +43,7 @@ class DashboardScreen extends StatelessWidget {
         label: 'Bài 4: Product List',
         onTap: () => Navigator.push(
           context,
-          MaterialPageRoute(builder: (_) =>  ProductListView()),
+          MaterialPageRoute(builder: (_) => ProductListView()),
         ),
       ),
       DashboardItem(
@@ -57,42 +61,42 @@ class DashboardScreen extends StatelessWidget {
         label: 'Bài 6: Navigation Stack Management',
         onTap: () => Navigator.pushNamed(context, '/home_stack'),
       ),
-      // DashboardItem(
-      //   icon: Icons.tune,
-      //   iconColor: Colors.amber,
-      //   label: 'Bài 7: Form profile styling',
-      //   onTap: () => Navigator.push(
-      //     context,
-      //     MaterialPageRoute(builder: (_) => FormProfileStyling()),
-      //   ),
-      // ),
-      // DashboardItem(
-      //   icon: Icons.grid_on,
-      //   iconColor: Colors.indigo,
-      //   label: 'Bài 8: Gesture Grid',
-      //   onTap: () => Navigator.push(
-      //     context,
-      //     MaterialPageRoute(builder: (_) => const GestureGridScreen()),
-      //   ),
-      // ),
-      // DashboardItem(
-      //   icon: Icons.swipe,
-      //   iconColor: Colors.pink,
-      //   label: 'Bài 9: Swipe hình',
-      //   onTap: () => Navigator.push(
-      //     context,
-      //     MaterialPageRoute(builder: (_) => const SwipeImageScreen()),
-      //   ),
-      // ),
-      // DashboardItem(
-      //   icon: Icons.delete_sweep,
-      //   iconColor: Colors.brown,
-      //   label: 'Bài 10: Kéo xóa item',
-      //   onTap: () => Navigator.push(
-      //     context,
-      //     MaterialPageRoute(builder: (_) => const DismissListScreen()),
-      //   ),
-      // ),
+      DashboardItem(
+        icon: Icons.shopping_bag,
+        iconColor: Colors.amber,
+        label: 'Bài 7: Order Screen',
+        onTap: () => Navigator.push(
+          context,
+          MaterialPageRoute(builder: (_) => const HomeOrderView()),
+        ),
+      ),
+      DashboardItem(
+        icon: Icons.delete_forever,
+        iconColor: Colors.indigo,
+        label: 'Bài 8: Confirm Screen',
+        onTap: () => Navigator.push(
+          context,
+          MaterialPageRoute(builder: (_) => const HomeConfirmView()),
+        ),
+      ),
+      DashboardItem(
+        icon: Icons.article,
+        iconColor: Colors.pink,
+        label: 'Bài 9: Article List',
+        onTap: () => Navigator.push(
+          context,
+          MaterialPageRoute(builder: (_) => const HomeArticleView()),
+        ),
+      ),
+      DashboardItem(
+        icon: Icons.dark_mode,
+        iconColor: Colors.brown,
+        label: 'Bài 10: Settings + Theme',
+        onTap: () => Navigator.push(
+          context,
+          MaterialPageRoute(builder: (_) => const HomeThemeView()),
+        ),
+      ),
     ];
 
     return Scaffold(

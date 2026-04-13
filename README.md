@@ -49,8 +49,17 @@ lib/
     │   ├── page1_stack..dart
     │   └── page2_stack.dart
     ├── 7/
+    │   ├── home_order.dart
+    │   └── order_view.dart
     ├── 8/
-    └── 9/
+    │   ├── home_confirm.dart
+    │   └── confirm_view.dart
+    ├── 9/
+    │   ├── home_article.dart
+    │   └── article_view.dart
+    └── 10/
+        ├── home_theme.dart
+        └── settings_theme_view.dart
 ```
 
 ---
@@ -109,3 +118,39 @@ lib/
 ![Bài 6](lib/view/6/image2.png)
 - Ảnh 3
 ![Bài 6](lib/view/6/image3.png)
+
+---
+
+### Bài 7: Order Screen
+- Ảnh 1
+![Bài 7](lib/view/7/image.png)
+- Ảnh 2
+![Bài 7](lib/view/7/image2.png)
+
+---
+
+### Bài 8: Confirm Screen
+- Ảnh 1
+![Bài 8](lib/view/8/image.png)
+- Ảnh 2
+![Bài 8](lib/view/8/image2.png)
+- Ảnh 3
+![Bài 8](lib/view/8/image3.png)
+
+---
+
+### Bài 9: Article List
+- Ảnh 1
+![Bài 9](lib/view/9/image.png)
+- Ảnh 2
+![Bài 9](lib/view/9/image2.png)
+
+---
+
+### Bài 10: Settings + Theme
+- Ảnh 1
+![Bài 10](lib/view/10/image.png)
+- Ảnh 2
+![Bài 10](lib/view/10/image2.png)
+- Ảnh 3
+![Bài 10](lib/view/10/image3.png)
